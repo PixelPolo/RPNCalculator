@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="CENTER" prefHeight="600.0" prefWidth="380.0" stylesheets="@RPNCalculator.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="RPNCalculator.CalculatorController">
+   <children>
+      <HBox alignment="CENTER" prefHeight="180.0" prefWidth="400.0" spacing="5.0">
+         <children>
+            <VBox alignment="TOP_CENTER" prefHeight="169.0" prefWidth="380.0" spacing="10.0">
+               <children>
+                  <Label id="stackSizeLabel" fx:id="stackSizeLabel" alignment="TOP_CENTER" maxHeight="30.0" maxWidth="380.0" minHeight="30.0" minWidth="340.0" prefHeight="30.0" prefWidth="380.0" text="Stack size : 0" />
+                  <HBox prefHeight="120.0" prefWidth="160.0" spacing="5.0">
+                     <children>
+                        <VBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="10.0" prefHeight="115.0" prefWidth="175.0" spacing="5.0">
+                           <children>
+                              <Label id="stackLabels" fx:id="stackLabel8" alignment="CENTER_RIGHT" maxHeight="30.0" maxWidth="170.0" minHeight="30.0" minWidth="170.0" prefHeight="30.0" prefWidth="170.0">
+                                 <VBox.margin>
+                                    <Insets />
+                                 </VBox.margin>
+                              </Label>
+                              <Label id="stackLabels" fx:id="stackLabel7" alignment="CENTER_RIGHT" layoutX="10.0" layoutY="10.0" maxHeight="30.0" maxWidth="170.0" minHeight="30.0" minWidth="170.0" prefHeight="30.0" prefWidth="170.0">
+                                 <VBox.margin>
+                                    <Insets />
+                                 </VBox.margin>
+                              </Label>
+                              <Label id="stackLabels" fx:id="stackLabel6" alignment="CENTER_RIGHT" layoutX="10.0" layoutY="36.0" maxHeight="30.0" maxWidth="170.0" minHeight="30.0" minWidth="170.0" prefHeight="30.0" prefWidth="170.0">
+                                 <VBox.margin>
+                                    <Insets />
+                                 </VBox.margin>
+                              </Label>
+                              <Label id="stackLabels" fx:id="stackLabel5" alignment="CENTER_RIGHT" layoutX="10.0" layoutY="62.0" maxHeight="30.0" maxWidth="170.0" minHeight="30.0" minWidth="170.0" prefHeight="30.0" prefWidth="170.0">
+                                 <VBox.margin>
+                                    <Insets />
+                                 </VBox.margin>
+                              </Label>
+                           </children>
+                        </VBox>
+                        <VBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="10.0" prefHeight="200.0" prefWidth="175.0" spacing="5.0">
+                           <children>
+                              <Label id="stackLabels" fx:id="stackLabel4" alignment="CENTER_RIGHT" maxHeight="30.0" maxWidth="172.0" minHeight="30.0" minWidth="172.0" prefHeight="30.0" prefWidth="172.0">
+                                 <VBox.margin>
+                                    <Insets />
+                                 </VBox.margin>
+                              </Label>
+                              <Label id="stackLabels" fx:id="stackLabel3" alignment="CENTER_RIGHT" layoutX="10.0" layoutY="10.0" maxHeight="30.0" maxWidth="172.0" minHeight="30.0" minWidth="172.0" prefHeight="30.0" prefWidth="172.0">
+                                 <VBox.margin>
+                                    <Insets />
+                                 </VBox.margin>
+                              </Label>
+                              <Label id="stackLabels" fx:id="stackLabel2" alignment="CENTER_RIGHT" layoutX="10.0" layoutY="36.0" maxHeight="30.0" maxWidth="172.0" minHeight="30.0" minWidth="172.0" prefHeight="30.0" prefWidth="172.0">
+                                 <VBox.margin>
+                                    <Insets />
+                                 </VBox.margin>
+                              </Label>
+                              <Label id="stackLabelResult" fx:id="stackLabel1" alignment="CENTER_RIGHT" layoutX="10.0" layoutY="62.0" maxHeight="30.0" maxWidth="172.0" minHeight="30.0" minWidth="172.0" prefHeight="30.0" prefWidth="172.0">
+                                 <VBox.margin>
+                                    <Insets />
+                                 </VBox.margin>
+                              </Label>
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+               </children>
+               <padding>
+                  <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+               </padding>
+            </VBox>
+         </children>
+      </HBox>
+      <GridPane alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="380.0" prefWidth="360.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Button id="numberButtons" fx:id="oneButton" contentDisplay="CENTER" mnemonicParsing="false" onAction="#buttonPressed" prefHeight="60.0" prefWidth="80.0" text="1" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER" />
+            <Button id="numberButtons" fx:id="threeButton" contentDisplay="CENTER" layoutX="15.0" layoutY="335.0" mnemonicParsing="false" onAction="#buttonPressed" prefHeight="60.0" prefWidth="80.0" text="3" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER" />
+            <Button id="numberButtons" fx:id="twoButton" contentDisplay="CENTER" layoutX="10.0" layoutY="15.0" mnemonicParsing="false" onAction="#buttonPressed" prefHeight="60.0" prefWidth="80.0" text="2" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER" />
+            <Button id="numberButtons" fx:id="eightButton" contentDisplay="CENTER" layoutX="15.0" layoutY="335.0" mnemonicParsing="false" onAction="#buttonPressed" prefHeight="60.0" prefWidth="80.0" text="8" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
+            <Button id="numberButtons" fx:id="sevenButton" contentDisplay="CENTER" layoutX="15.0" layoutY="335.0" mnemonicParsing="false" onAction="#buttonPressed" prefHeight="60.0" prefWidth="80.0" text="7" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
+            <Button id="numberButtons" fx:id="fiveButton" contentDisplay="CENTER" layoutX="15.0" layoutY="335.0" mnemonicParsing="false" onAction="#buttonPressed" prefHeight="60.0" prefWidth="80.0" text="5" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER" />
+            <Button id="numberButtons" fx:id="fourButton" contentDisplay="CENTER" layoutX="15.0" layoutY="335.0" mnemonicParsing="false" onAction="#buttonPressed" prefHeight="60.0" prefWidth="80.0" text="4" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER" />
+            <Button id="numberButtons" fx:id="sixButton" contentDisplay="CENTER" layoutX="15.0" layoutY="335.0" mnemonicParsing="false" onAction="#buttonPressed" prefHeight="60.0" prefWidth="80.0" text="6" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER" />
+            <Button id="numberButtons" fx:id="nineButton" contentDisplay="CENTER" layoutX="15.0" layoutY="335.0" mnemonicParsing="false" onAction="#buttonPressed" prefHeight="60.0" prefWidth="80.0" text="9" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
+            <Button id="deleteButtons" fx:id="cButton" contentDisplay="CENTER" layoutX="15.0" layoutY="335.0" mnemonicParsing="false" onAction="#buttonPressed" prefHeight="60.0" prefWidth="80.0" text="C" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+            <Button id="operatorsButtons" fx:id="divideButton" contentDisplay="CENTER" layoutX="15.0" layoutY="335.0" mnemonicParsing="false" onAction="#buttonPressed" prefHeight="60.0" prefWidth="80.0" text="/" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+            <Button id="operatorsButtons" fx:id="multiplyButton" contentDisplay="CENTER" layoutX="15.0" layoutY="335.0" mnemonicParsing="false" onAction="#buttonPressed" prefHeight="60.0" prefWidth="80.0" text="x" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
+            <Button id="enterButton" fx:id="enterButton" contentDisplay="CENTER" layoutX="15.0" layoutY="335.0" mnemonicParsing="false" onAction="#buttonPressed" prefHeight="60.0" prefWidth="80.0" text="Enter" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="CENTER" />
+            <Button id="operatorsButtons" fx:id="plusButton" contentDisplay="CENTER" layoutX="15.0" layoutY="335.0" mnemonicParsing="false" onAction="#buttonPressed" prefHeight="60.0" prefWidth="80.0" text="+" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER" />
+            <Button id="operatorsButtons" fx:id="minusButton" contentDisplay="CENTER" layoutX="15.0" layoutY="335.0" mnemonicParsing="false" onAction="#buttonPressed" prefHeight="60.0" prefWidth="80.0" text="-" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER" />
+            <Button id="numberButtons" fx:id="zeroButton" contentDisplay="CENTER" layoutX="15.0" layoutY="278.0" mnemonicParsing="false" onAction="#buttonPressed" prefHeight="60.0" prefWidth="80.0" text="0" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="CENTER" />
+            <Button id="numberButtons" fx:id="pointButton" contentDisplay="CENTER" layoutX="10.0" layoutY="344.0" mnemonicParsing="false" onAction="#buttonPressed" prefHeight="60.0" prefWidth="80.0" text="." GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="CENTER" />
+            <Button id="numberButtons" fx:id="negativeButton" contentDisplay="CENTER" layoutX="100.0" layoutY="344.0" mnemonicParsing="false" onAction="#buttonPressed" prefHeight="60.0" prefWidth="80.0" text="(-)" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="CENTER" />
+            <Button id="deleteButtons" fx:id="cEButton" contentDisplay="CENTER" layoutX="285.0" layoutY="19.0" mnemonicParsing="false" onAction="#buttonPressed" prefHeight="60.0" prefWidth="80.0" text="CE" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+            <Button id="swapButton" fx:id="swapButton" contentDisplay="CENTER" mnemonicParsing="false" onAction="#buttonPressed" prefHeight="60.0" prefWidth="80.0" text="Swap" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+         </children>
+      </GridPane>
+   </children>
+</VBox>

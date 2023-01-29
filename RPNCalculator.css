@@ -1,0 +1,57 @@
+.root {
+    -fx-background-color: rgba(255, 235, 190, 0.7);
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+}
+
+.label {
+    -fx-background-color: rgba(255, 255, 255, 1);
+    -fx-border-color: rgba(0, 0, 0, .5);
+}
+
+.button {
+    -fx-cursor: hand;
+    -fx-background-radius: 50px;
+    -fx-border-color: rgba(0, 0, 0, .5);
+    -fx-border-radius: 50px;
+}
+
+.button:hover{
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.2), 20, 0, 0, 0);
+}
+
+#stackLabels {
+    -fx-font-size: 15px;
+    -fx-padding: 5px;
+}
+
+#stackSizeLabel {
+    -fx-font-size: 20px;
+    -fx-alignment: center;
+}
+
+#stackLabelResult {
+    -fx-font-size: 17px;
+    -fx-font-weight: bold;
+    -fx-padding: 5px;
+}
+
+#numberButtons {
+    -fx-background-color: rgba(130, 225, 255, 0.7);
+}
+
+#deleteButtons {
+    -fx-background-color: rgba(255, 0, 0, 0.25);
+}
+
+#enterButton {
+    -fx-background-color: rgba(40, 220, 0, 0.7);
+}
+
+#operatorsButtons {
+    -fx-background-color: rgba(220, 150, 0, 0.7);
+}
+
+#swapButton {
+    -fx-background-color: rgba(210, 220, 0, 0.7);
+}
