@@ -7,6 +7,7 @@ import javafx.fxml.FXML;
 import javafx.scene.control.Label;
 
 public class CalculatorController {
+    
     @FXML
     private Label
             stackLabel1, stackLabel2, stackLabel3, stackLabel4,
