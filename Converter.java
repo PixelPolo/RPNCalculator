@@ -6,6 +6,7 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class Converter {
+
     public static String getStringValueOfButtonPressed(ActionEvent e) {
         String regex = "'.*'";
         Pattern p = Pattern.compile(regex);
